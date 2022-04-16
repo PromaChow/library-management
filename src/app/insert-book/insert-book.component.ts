@@ -15,7 +15,7 @@ export class InsertBookComponent implements OnInit {
   ngOnInit(): void {
   }
   insert(): void{
-    console.log(this.givenBook);
+    console.log(this.givenBook.name);
     this.bookService.insertBook(this.givenBook);
     this.router.navigate(['']);
   }
